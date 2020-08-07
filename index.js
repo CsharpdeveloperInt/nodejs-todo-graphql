@@ -12,6 +12,8 @@ app.use((req,res,next)=>{
 })
 
 
+
+//Запускаем сервер, и сервер БД
 async function start(){
     try
     {
