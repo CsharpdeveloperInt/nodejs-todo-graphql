@@ -1,6 +1,5 @@
 const seqlib = require('sequelize')
 const sequelize = require('../database')
-const { strictRight } = require('sequelize/types/lib/operators')
 
 const todo = sequelize.define('Todo',{
     id:{
