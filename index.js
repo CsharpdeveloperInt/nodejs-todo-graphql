@@ -17,10 +17,11 @@ app.use((req,res,next)=>{
 async function start(){
     try
     {
-      await sequelize.sync()
-      app.listen(PORT,()=>{
-          console.log(`Server is running on port ${PORT}`)
-      })  
+      await sequelize.sync().then(()=>{
+        app.listen(PORT, function(){
+          console.log(`Server is running on port ${PORT}`);
+        });
+      }).catch(err=>console.log(err));
     } catch(e)
     {
         console.log(e)
