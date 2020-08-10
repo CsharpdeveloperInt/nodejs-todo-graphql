@@ -6,3 +6,5 @@ const sequelize = new Sequelize(config.MYSQL_DB,config.MYSQL_LOGIN,config.MYSQL_
     host: config.MYSQL_HOST,
     dialect: 'mysql'
 })
+
+module.exports = sequelize
