@@ -17,6 +17,14 @@ app.use((req,res,next)=>{
 async function start(){
     try
     {
+
+      try {
+        await sequelize.authenticate();
+        console.log('Connection has been established successfully.');
+      } catch (error) {
+        console.error('Unable to connect to the database:', error);
+      }
+
       await sequelize.sync({ force: true }).then(()=>{
         app.listen(PORT, function(){
           console.log(`Server is running on port ${PORT}`);
