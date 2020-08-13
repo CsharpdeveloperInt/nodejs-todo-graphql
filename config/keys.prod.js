@@ -1,7 +1,6 @@
 module.exports = {
-    MONGO_URL: process.env.MONGO_URL,
-    SESSION_SECRET: process.env.SESSION_SECRET,
-    EMAIL_KEY: process.env.EMAIL_KEY,
-    EMAIL_FROM: process.env.EMAIL_FROM,
-    BASE_URL: process.env.BASE_URL
+    MYSQL_DB: process.env.MYSQL_DB,
+    MYSQL_LOGIN: process.env.MYSQL_LOGIN,
+    MYSQL_PASSWORD: process.env.MYSQL_PASSWORD,
+    MYSQL_HOST: process.env.MYSQL_HOST
 }

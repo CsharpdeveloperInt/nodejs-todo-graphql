@@ -15,10 +15,6 @@ const todo = sequelize.define('Todo',{
     title:{
         type: seqlib.STRING,
         allowNull: false
-    },
-    date:{
-        type: seqlib.DATE,
-        allowNull: false
     }
 })
 
